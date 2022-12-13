@@ -23,7 +23,7 @@ for i in range(len(frames)):
     u = g3.read_new(filename, 'U   ', ptype)
     pressure = u*(gamma-1)*density
     
-    ffig = plt.figure(figsize = (11,3), dpi = 200)
+    fig = plt.figure(figsize = (11,3), dpi = 200)
     grid = plt.GridSpec(3,11, wspace = 0.0, hspace = 0.0)
     ax1 = plt.subplot(grid[0:3,0:3])
     ax2 = plt.subplot(grid[0:3,4:7])
